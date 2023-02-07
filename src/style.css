@@ -43,20 +43,26 @@ img {
   height: 5rem;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .logo {
   width: 20rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   margin-right: 1rem;
 }
 
 .header .container {
-display: flex;
-align-items: center;
-padding: 1rem 2rem;
-border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #333;
 }
 
-.main-text, .sub-text {
+.main-text,
+.sub-text {
   display: block;
 }
 
@@ -69,19 +75,11 @@ border-bottom: 1px solid #333;
   font-style: italic;
 }
 
-/* Utility*/
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-
 /* Breakpoint syles */
 
 @media (min-width: 768px) {
-
   .container {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
-}
-
