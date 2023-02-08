@@ -75,6 +75,17 @@ img {
   font-style: italic;
 }
 
+/* Footer Section */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid rgb(49, 49, 49);
+  padding: 10px 20px;
+  margin: auto 30px;
+  width: 95.5vw;
+}
+
 /* Breakpoint syles */
 
 @media (min-width: 768px) {
