@@ -1,5 +1,5 @@
-import '@fortawesome/fontawesome-free/js/fontawesome';
-import '@fortawesome/fontawesome-free/js/regular';
+import '@fortawesome/fontawesome-free/js/fontawesome.js';
+import '@fortawesome/fontawesome-free/js/regular.js';
 import './images/season-2-img.jpeg';
 import './images/the100logo.png';
 import Hundred from './modules/hundred.js';
