@@ -1,4 +1,6 @@
+// eslint-disable-next-line import/no-unresolved
 import '@fortawesome/fontawesome-free/js/fontawesome.js';
+// eslint-disable-next-line import/no-unresolved
 import '@fortawesome/fontawesome-free/js/regular.js';
 import './images/season-2-img.jpeg';
 import './images/the100logo.png';
