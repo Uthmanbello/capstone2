@@ -75,7 +75,6 @@ img {
   font-style: italic;
 }
 
-<<<<<<< HEAD
 /* Main Section */
 .main {
   padding: 2rem;
@@ -129,19 +128,15 @@ img {
 
 
 
-=======
 /* Footer Section */
 
 footer {
-  position: fixed;
-  bottom: 0;
   border-top: 1px solid rgb(49, 49, 49);
   padding: 10px 20px;
   margin: auto 30px;
   width: 95.5vw;
 }
 
->>>>>>> dev
 /* Breakpoint syles */
 
 @media (min-width: 768px) {
