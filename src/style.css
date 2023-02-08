@@ -83,18 +83,50 @@ img {
 .main .container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .season-card {
   border: 1px solid #444;
   border-radius: .5rem;
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+  margin: 2rem 0;
 }
 
 .card-image {
   border-top-right-radius: .5rem;
   border-top-left-radius: .5rem;
 }
+
+.season-description {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-primary {
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  background-color: #dd8a5a;
+  color: #fff;
+  width: fit-content;
+  padding: .25rem .75rem;
+  border-radius: 2rem;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.75);
+}
+
+.btn-primary:hover {
+  transform: scale(1.04);
+  background-color: #e9a47d;
+}
+
+.btn-primary:active {
+  transform: translateY(2px);
+  background-color: #d97135;
+}
+
+
 
 /* Breakpoint syles */
 
