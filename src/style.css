@@ -93,6 +93,11 @@ img {
   margin: 2rem 0;
 }
 
+.season-card:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 4px 6px 0px rgba(0,0,0,0.75);
+}
+
 .card-image {
   border-top-right-radius: .5rem;
   border-top-left-radius: .5rem;

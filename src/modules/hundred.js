@@ -1,4 +1,4 @@
-class TheHundred {
+class Hundred {
   constructor(url) {
     this.url = url;
   }
@@ -6,11 +6,11 @@ class TheHundred {
   getData = async (url) => {
     await fetch(url, {
       method: 'GET',
-    }).then((response) => response.json)
+    }).then((response) => response.json())
       .then((data) => {
         localStorage.setItem('data', JSON.stringify(data));
       });
   }
 }
 
-export default TheHundred;
+export default Hundred;
