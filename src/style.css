@@ -1,3 +1,85 @@
-.body {
-  color: black;
+/* RESET */
+:root {
+  font-size: 16px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: poppins, sans-serif;
+  font-size: 1rem;
+  color: #444;
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+}
+
+/* Header Section */
+.header {
+  height: 5rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 20rem;
+  border-radius: 0.8rem;
+  margin-right: 1rem;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.main-text,
+.sub-text {
+  display: block;
+}
+
+.main-text {
+  font-size: 4rem;
+}
+
+.sub-text {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Breakpoint syles */
+
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
