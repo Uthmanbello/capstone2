@@ -40,7 +40,8 @@ img {
 
 /* Header Section */
 .header {
-  height: 5rem;
+  background-color: #f5efef;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
 }
 
 .container {
@@ -58,7 +59,6 @@ img {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #333;
 }
 
 .main-text,
@@ -73,6 +73,27 @@ img {
 .sub-text {
   font-size: 1rem;
   font-style: italic;
+}
+
+/* Main Section */
+.main {
+  padding: 2rem;
+}
+
+.main .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.season-card {
+  border: 1px solid #444;
+  border-radius: .5rem;
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card-image {
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
 }
 
 /* Breakpoint syles */
