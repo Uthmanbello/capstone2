@@ -8,9 +8,10 @@ const commentEvent = () => {
       popup.classList.remove('d-none');
       popupContents[index].classList.remove('d-none');
 
-      const btnClosePopup = popup.querySelector('.popup-close');
-      btnClosePopup.addEventListener('click', () => {
-        popup.classList.add('d-none');
+      const popupCloseButtons = popup.querySelectorAll('.popup-close');
+      popupCloseButtons[index].addEventListener('click', () => {
+      popup.classList.add('d-none');
+      popupContents[index].classList.add('d-none');
       });
     });
   }

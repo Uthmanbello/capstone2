@@ -152,10 +152,19 @@ img {
   border-radius: 16px;
 }
 
+.popup-header {
+  display: flex;
+}
+
 .popup-close {
   float: right;
   font-size: 2rem;
-  margin-right: -15vw;
+  padding-top: 20px;
+  margin-right: -20vw;
+}
+
+.popup-title {
+  font-size: 2em;
 }
 
 .popup-image {
@@ -176,6 +185,10 @@ img {
 .synopsis {
   display: flex;
   justify-content: space-between;
+}
+
+.end {
+  padding-right: 32px;
 }
 
 ul {
