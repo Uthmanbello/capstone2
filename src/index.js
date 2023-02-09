@@ -4,8 +4,10 @@ import '@fortawesome/fontawesome-free/js/fontawesome.js';
 import '@fortawesome/fontawesome-free/js/regular.js';
 import './images/season-2-img.jpeg';
 import './images/the100logo.png';
+import commentEvent from './modules/commentEvent.js';
 import CommentPopup from './modules/commentPopup.js';
 import Hundred from './modules/hundred.js';
+import resEvent from './modules/reservationEvent.js';
 import View from './modules/views.js';
 import './style.css';
 
@@ -26,5 +28,6 @@ window.onload = () => {
     view.seasonList(arr);
     commentPop.seasonList(arr);
     commentEvent();
+    resEvent();
   }
 };

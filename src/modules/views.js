@@ -13,7 +13,7 @@ class View {
         </p>
       </div>
       <button type="button" class="comments btn-primary comment-btn">Comment</button>
-      <button type="button" class="reservation btn-primary">Reservation</button>
+      <button type="button" class="reservation btn-primary res-btn">Reservation</button>
     </div>
     `;
       viewBox.append(div);
