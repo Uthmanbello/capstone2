@@ -233,83 +233,9 @@ ul {
   overflow-y: scroll;
 }
 
-.popup-content {
-  background-color: white;
-  width: 70%;
-  margin: 70px auto;
-  padding: 5px 10vw 30px;
-  box-sizing: border-box;
-  border-radius: 16px;
-}
-
-.popup-header {
-  display: flex;
-}
-
-.popup-close {
-  float: right;
-  font-size: 2rem;
-  padding-top: 20px;
-  margin-right: -20vw;
-}
-
-.popup-title {
-  font-size: 2em;
-}
-
-.popup-image {
-  max-width: 60%;
-  width: 60%;
-  height: 80vh;
-  margin: 20px 10vw;
-}
-
-.d-none {
-  display: none;
-}
-
-.center {
-  text-align: center;
-}
-
-.synopsis {
-  display: flex;
-  justify-content: space-between;
-}
-
-.end {
-  padding-right: 32px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .reservation-form {
   display: flex;
   flex-direction: column;
-}
-
-.name-input {
-  width: 25vw;
-  height: 30px;
-  margin-bottom: 20px;
-  padding-left: 10px;
-}
-
-.text-input {
-  width: 40vw;
-  height: 15vh;
-  margin-bottom: 20px;
-  padding-left: 10px;
-}
-
-.btn btn-dark {
-  width: 100px;
-  height: 30px;
-  background: none;
 }
 
 /* Footer Section */
