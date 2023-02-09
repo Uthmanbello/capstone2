@@ -30,9 +30,9 @@ class CommentPopup {
     <button type="button" id="comment-btn" class="comment-input-btn">comment</button>
 </form>
       `;
-      commentPopup.append(div);
+        commentPopup.append(div);
       });
     }
-  }
-  
-  export default CommentPopup;
+}
+
+export default CommentPopup;
