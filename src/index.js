@@ -8,6 +8,7 @@ import Hundred from './modules/hundred.js';
 import View from './modules/views.js';
 import CommentPopup from './modules/commentPopup.js';
 import commentEvent from './modules/commentEvent.js';
+import resEvent from './modules/reservationEvent.js';
 import './style.css';
 
 const url = 'https://api.tvmaze.com/shows/6/seasons';
@@ -23,5 +24,6 @@ window.onload = () => {
     view.seasonList(arr);
     commentPop.seasonList(arr);
     commentEvent();
+    resEvent();
   }
 };

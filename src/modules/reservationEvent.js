@@ -1,14 +1,14 @@
-const commentEvent = () => {
+const resEvent = () => {
   const popup = document.querySelector('.comment-popup');
   const popupContents = document.querySelectorAll('.popup-content');
-  const commentButtons = document.querySelectorAll('.comment-btn');
-  const reservationItems = document.querySelectorAll('.reservation-items');
+  const resButtons = document.querySelectorAll('.res-btn');
+  const commentItems = document.querySelectorAll('.comment-items');
 
-  for (let index = 0; index < commentButtons.length; index++) {
-    commentButtons[index].addEventListener('click', () => {
+  for (let index = 0; index < resButtons.length; index++) {
+    resButtons[index].addEventListener('click', () => {
       popup.classList.remove('d-none');
       popupContents[index].classList.remove('d-none');
-      reservationItems[index].classList.add('d-none');
+      commentItems[index].classList.add('d-none');
 
       const popupCloseButtons = popup.querySelectorAll('.popup-close');
       popupCloseButtons[index].addEventListener('click', () => {
@@ -19,4 +19,4 @@ const commentEvent = () => {
   }
 };
 
-export default commentEvent;
+export default resEvent;

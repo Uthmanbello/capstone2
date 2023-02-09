@@ -222,6 +222,22 @@ ul {
   background: none;
 }
 
+/* Reservation */
+.res-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2c2c2cd0;
+  overflow-y: scroll;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Footer Section */
 
 footer {
