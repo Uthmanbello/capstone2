@@ -82,7 +82,7 @@ img {
 
 .main .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -90,7 +90,8 @@ img {
   border: 1px solid #444;
   border-radius: 0.5rem;
   box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.75);
-  margin: 2rem 0;
+  margin: 2rem;
+  transition: all .2s;
 }
 
 .season-card:hover {
@@ -124,11 +125,13 @@ img {
 .btn-primary:hover {
   transform: scale(1.04);
   background-color: #e9a47d;
+  cursor: pointer;
 }
 
 .btn-primary:active {
   transform: translateY(2px);
   background-color: #d97135;
+  cursor: pointer;
 }
 
 /* Comments Popup */
@@ -160,7 +163,8 @@ img {
   float: right;
   font-size: 2rem;
   padding-top: 20px;
-  margin-right: -20vw;
+  margin-right: -10vw;
+  cursor: pointer;
 }
 
 .popup-title {
@@ -231,11 +235,4 @@ footer {
   width: 95.5vw;
 }
 
-/* Breakpoint syles */
 
-@media (min-width: 768px) {
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
