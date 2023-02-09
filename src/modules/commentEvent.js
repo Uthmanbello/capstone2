@@ -10,8 +10,8 @@ const commentEvent = () => {
 
       const popupCloseButtons = popup.querySelectorAll('.popup-close');
       popupCloseButtons[index].addEventListener('click', () => {
-      popup.classList.add('d-none');
-      popupContents[index].classList.add('d-none');
+        popup.classList.add('d-none');
+        popupContents[index].classList.add('d-none');
       });
     });
   }
