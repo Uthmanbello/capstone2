@@ -14,6 +14,7 @@ class View {
       </div>
       <button type="button" class="comments btn-primary comment-btn">Comment</button>
       <button type="button" class="reservation btn-primary res-btn">Reservation</button>
+      <span id="season-id" class="hidden">${element.id}</span>
     </div>
     `;
       viewBox.append(div);

@@ -14,7 +14,7 @@ import './style.css';
 // Initialize
 const url = 'https://api.tvmaze.com/shows/6/seasons';
 const involvementBaseURL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/';
-const addLikesURL = `${involvementURL}apps/Ah7jYcR1vh7ExHgt7yOD`;
+const addLikesURL = `${involvementBaseURL}apps/Ah7jYcR1vh7ExHgt7yOD`;
 
 const show = new Hundred(url);
 show.getData(url);
