@@ -41,7 +41,7 @@ img {
 /* Header Section */
 .header {
   background-color: #f5efef;
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -75,7 +75,6 @@ img {
   font-style: italic;
 }
 
-<<<<<<< HEAD
 /* Main Section */
 .main {
   padding: 2rem;
@@ -89,14 +88,19 @@ img {
 
 .season-card {
   border: 1px solid #444;
-  border-radius: .5rem;
-  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.75);
   margin: 2rem 0;
 }
 
+.season-card:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 4px 6px 0 rgba(0, 0, 0, 0.75);
+}
+
 .card-image {
-  border-top-right-radius: .5rem;
-  border-top-left-radius: .5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
 }
 
 .season-description {
@@ -112,9 +116,9 @@ img {
   background-color: #dd8a5a;
   color: #fff;
   width: fit-content;
-  padding: .25rem .75rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 2rem;
-  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.75);
 }
 
 .btn-primary:hover {
@@ -127,21 +131,15 @@ img {
   background-color: #d97135;
 }
 
-
-
-=======
 /* Footer Section */
 
 footer {
-  position: fixed;
-  bottom: 0;
   border-top: 1px solid rgb(49, 49, 49);
   padding: 10px 20px;
   margin: auto 30px;
   width: 95.5vw;
 }
 
->>>>>>> dev
 /* Breakpoint syles */
 
 @media (min-width: 768px) {
