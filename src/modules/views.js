@@ -9,7 +9,7 @@ class View {
       <div class="season-description">
         <h4 class="season-title">Season ${element.number}</h4>
         <p class="likes">
-          <span class="likes-counter">5</span> likes <i class="fa-regular fa-heart"></i>
+          <span class="likes-counter">5</span> likes <i class="fa-regular fa-heart like-button"></i>
         </p>
       </div>
       <button type="button" class="comments btn-primary comment-btn">Comment</button>

@@ -82,7 +82,7 @@ img {
 
 .main .container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -103,6 +103,19 @@ img {
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
 }
+
+.like-button {
+  cursor: pointer;
+}
+
+.like-button:hover {
+  transform: scale(1.2);
+}
+
+.like-button:active {
+  transform: translateY(.1rem);
+}
+
 
 .season-description {
   padding: 0.5rem;
@@ -233,6 +246,7 @@ footer {
   padding: 10px 20px;
   margin: auto 30px;
   width: 95.5vw;
+  text-align: center;
 }
 
 
