@@ -11,8 +11,9 @@ body {
   padding: 0;
   font-family: poppins, sans-serif;
   font-size: 1rem;
-  color: #444;
+  color: whitesmoke;
   position: relative;
+  background-color: rgb(61, 61, 61);
 }
 
 *,
@@ -30,6 +31,7 @@ li {
 a {
   text-decoration: none;
   background-color: transparent;
+  color: #dd8a5a;
 }
 
 img {
@@ -40,7 +42,7 @@ img {
 
 /* Header Section */
 .header {
-  background-color: #f5efef;
+  background-color: transparent;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -50,8 +52,8 @@ img {
 }
 
 .logo {
-  width: 20rem;
-  border-radius: 0.8rem;
+  width: 10rem;
+  border-radius: 30%;
   margin-right: 1rem;
 }
 
@@ -82,7 +84,7 @@ img {
 
 .main .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -90,7 +92,8 @@ img {
   border: 1px solid #444;
   border-radius: 0.5rem;
   box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.75);
-  margin: 2rem 0;
+  margin: 2rem;
+  transition: all 0.2s;
 }
 
 .season-card:hover {
@@ -101,6 +104,18 @@ img {
 .card-image {
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
+}
+
+.like-button {
+  cursor: pointer;
+}
+
+.like-button:hover {
+  transform: scale(1.2);
+}
+
+.like-button:active {
+  transform: translateY(0.1rem);
 }
 
 .season-description {
@@ -117,6 +132,7 @@ img {
   color: #fff;
   width: fit-content;
   padding: 0.25rem 0.75rem;
+  border: none;
   border-radius: 2rem;
   box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.75);
 }
@@ -124,11 +140,13 @@ img {
 .btn-primary:hover {
   transform: scale(1.04);
   background-color: #e9a47d;
+  cursor: pointer;
 }
 
 .btn-primary:active {
   transform: translateY(2px);
   background-color: #d97135;
+  cursor: pointer;
 }
 
 /* Comments Popup */
@@ -144,7 +162,7 @@ img {
 }
 
 .popup-content {
-  background-color: white;
+  background-color: rgb(80, 80, 80);
   width: 70%;
   margin: 70px auto;
   padding: 5px 10vw 30px;
@@ -160,7 +178,12 @@ img {
   float: right;
   font-size: 2rem;
   padding-top: 20px;
-  margin-right: -20vw;
+  margin-right: -10vw;
+  cursor: pointer;
+}
+
+.margin-b {
+  margin-bottom: 30px;
 }
 
 .popup-title {
@@ -202,6 +225,13 @@ ul {
   flex-direction: column;
 }
 
+.input-style {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  background-color: whitesmoke;
+  color: rgb(59, 59, 59);
+}
+
 .name-input {
   width: 25vw;
   height: 30px;
@@ -219,10 +249,11 @@ ul {
 .comment-input-btn {
   width: 100px;
   height: 30px;
-  background: none;
+  margin: 0;
 }
 
 /* Reservation */
+
 .res-popup {
   position: fixed;
   top: 0;
@@ -238,20 +269,17 @@ ul {
   flex-direction: column;
 }
 
+.res-input-btn {
+  width: 140px;
+  height: 30px;
+  margin: 0;
+}
+
 /* Footer Section */
 
 footer {
-  border-top: 1px solid rgb(49, 49, 49);
   padding: 10px 20px;
   margin: auto 30px;
   width: 95.5vw;
-}
-
-/* Breakpoint syles */
-
-@media (min-width: 768px) {
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
+  text-align: center;
 }
