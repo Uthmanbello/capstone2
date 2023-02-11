@@ -1,4 +1,4 @@
-import {addReservation} from './add.js';
+import { addReservation } from './add.js';
 import { newReservation, storedReservations } from './api.js';
 import { reservationCounter } from './counter.js';
 import CommentPopup from './commentPopup.js';
@@ -12,13 +12,15 @@ const submitReservation = async (e) => {
   const endDate = e.target.end_date.value;
   const id = e.target.id1.value;
 
-  await newReservation({ id, username, startDate, endDate });
+  await newReservation({
+    id, username, startDate, endDate,
+  });
 
   const data1 = await storedReservations(id);
   const dataArr1 = data1.data;
   let html1 = '';
   dataArr1.forEach((item) => {
-    html1 += addReservation (item.username, item.date_start, item.date_end);
+    html1 += addReservation(item.username, item.date_start, item.date_end);
   });
   const resCount = reservationCounter(dataArr1);
   resList.innerHTML = html1;

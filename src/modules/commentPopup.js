@@ -9,9 +9,9 @@ class CommentPopup {
     }
 
     getReservations = async (id) => {
-        const { data } = await storedReservations(id);
+      const { data } = await storedReservations(id);
 
-        return Array.isArray(data) ? data : [];
+      return Array.isArray(data) ? data : [];
     }
 
     seasonList = async (element) => {

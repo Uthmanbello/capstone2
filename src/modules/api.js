@@ -8,7 +8,7 @@ export const storedComments = async (id) => {
 
 export const newComment = async ({ id, name, comm }) => {
   const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/MgbGOFTaDhTVdgSX8BJW/comments', {
-    method: 'POST',            
+    method: 'POST',
     mode: 'cors',
     cache: 'no-cache',
     credentials: 'same-origin',
@@ -29,13 +29,17 @@ export const storedReservations = async (id) => {
   return { status: response.status, data };
 };
 
-export const newReservation = async ({ id, username, startDate: stdate, endDate: edate }) => {
+export const newReservation = async ({
+  id, username, startDate: stdate, endDate: edate,
+}) => {
   const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/MgbGOFTaDhTVdgSX8BJW/reservations/', {
     method: 'POST',
     mode: 'cors',
     cache: 'no-cache',
     credentials: 'same-origin',
-    body: JSON.stringify({ item_id: id, username: username, date_start: stdate, date_end: edate }),
+    body: JSON.stringify({
+      item_id: id, username, date_start: stdate, date_end: edate,
+    }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
