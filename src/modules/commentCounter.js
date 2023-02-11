@@ -1,6 +1,3 @@
-export const commentCounter = (ind, arr) => {
-  const commentCountDisplays = document.querySelectorAll('.comment-count');
-  commentCountDisplays[ind].innerHTML = `Comments (${arr.length})`;
-};
-  
+const commentCounter = (arr) => arr.length;
+
 export default commentCounter;

@@ -19,7 +19,6 @@ const addLikesURL = `${involvementBaseURL}apps/Ah7jYcR1vh7ExHgt7yOD`;
 const show = new Hundred(url);
 show.getData(url);
 const view = new View();
-const commentPop = new CommentPopup();
 
 // On Page Load
 window.onload = async () => {

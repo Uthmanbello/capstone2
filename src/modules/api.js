@@ -1,4 +1,4 @@
-//app_id: MgbGOFTaDhTVdgSX8BJW
+// app_id: MgbGOFTaDhTVdgSX8BJW
 
 export const storedComments = async (id) => {
   const response = await window.fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/MgbGOFTaDhTVdgSX8BJW/comments?item_id=${id}`);
