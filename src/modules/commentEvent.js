@@ -1,11 +1,12 @@
-import addComment from './add.js';
+import {addComment} from './add.js';
 import { newComment, storedComments } from './api.js';
-import commentCounter from './commentCounter.js';
+import { commentCounter } from './counter.js';
 import CommentPopup from './commentPopup.js';
 
 const submitComment = async (e) => {
   e.preventDefault();
   const commList = document.querySelector('.comments-list');
+  const commHeader = document.querySelector('.comment-count');
   const name = e.target.name.value;
   const comm = e.target.comm.value;
   const id = e.target.id.value;
@@ -14,13 +15,14 @@ const submitComment = async (e) => {
 
   const data = await storedComments(id);
   const dataArr = data.data;
+  const count = commentCounter(dataArr);
   let html = '';
   dataArr.forEach((item) => {
     html += addComment(item.creation_date, item.username, item.comment);
   });
   commList.innerHTML = html;
+  commHeader.innerHTML = `Comments(${count})`;
   e.target.reset();
-  commentCounter(dataArr);
 };
 
 const commentEvent = () => {

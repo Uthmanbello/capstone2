@@ -1,4 +1,4 @@
-const { default: commentCounter } = require('../src/modules/commentCounter.js');
+const { default: commentCounter } = require('../src/modules/counter.js');
 
 describe('test for comment counts', () => {
   test('should return the correct array lenght for comments array', () => {
