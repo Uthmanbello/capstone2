@@ -1,10 +1,5 @@
-const addComment = ( ind, date, name, comm ) => {
-    const commentLists = document.querySelectorAll('.comments-list');
-    const commentItem = document.createElement('li');
-    commentItem.className = 'comment-item';
-    commentItem.innerHTML = `${date} ${name}: ${comm}`;
+const addComment = (date, name, comm) => {
+   return `<li>${date} ${name}: ${comm}</li>`
+};
   
-    commentLists[`${ind}`].appendChild(commentItem);
-  };
-  
-  export default addComment;
+export default addComment;

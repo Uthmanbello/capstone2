@@ -22,11 +22,10 @@ const view = new View();
 const commentPop = new CommentPopup();
 
 // On Page Load
-window.onload = () => {
+window.onload = async () => {
   if (localStorage.getItem('data')) {
     const arr = JSON.parse(localStorage.getItem('data'));
     view.seasonList(arr);
-    commentPop.seasonList(arr);
     commentEvent();
     resEvent();
   }

@@ -1,5 +1,4 @@
-// Involvement API app_id: Ah7jYcR1vh7ExHgt7yOD
-const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/MgbGOFTaDhTVdgSX8BJW/comments';
+//app_id: MgbGOFTaDhTVdgSX8BJW
 
 export const storedComments = async (id) => {
   const response = await window.fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/MgbGOFTaDhTVdgSX8BJW/comments?item_id=${id}`);

@@ -8,7 +8,7 @@ const commentEvent = () => {
   const commentButtons = document.querySelectorAll('.comment-btn');
   const reservationItems = document.querySelectorAll('.reservation-items');
   const forms = document.querySelectorAll('.comment-form');
-
+  console.log(forms)
   for (let index = 0; index < commentButtons.length; index++) {
     commentButtons[index].addEventListener('click', () => {
       popup.classList.remove('d-none');
@@ -26,6 +26,7 @@ const commentEvent = () => {
         e.preventDefault();
         const names = document.querySelectorAll('.comment-name');
         const comms = document.querySelectorAll('.text-input');
+        const commList = document.querySelectorAll('.comments-list')[index];
         const name = names[index].value;
         const comm = comms[index].value;
         const id = e.target.id.value;
@@ -33,9 +34,11 @@ const commentEvent = () => {
         const { status } = await newComment({ id, name, comm });
         const data = await storedComments(id);
         const dataArr = data.data;
+        let html = '';
         dataArr.forEach(item => {
-            addComment(ind, item.creation_date, item.username, item.comment)
+            html =  html + addComment(item.creation_date, item.username, item.comment)
         }) 
+        commList.innerHTML = html;
         e.target.reset();
         commentCounter(ind, dataArr);
       };

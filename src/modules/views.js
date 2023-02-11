@@ -12,8 +12,8 @@ class View {
           <span class="likes-counter">5</span> likes <i class="fa-regular fa-heart like-button"></i>
         </p>
       </div>
-      <button type="button" class="comments btn-primary comment-btn">Comment</button>
-      <button type="button" class="reservation btn-primary res-btn">Reservation</button>
+      <button type="button" id="${element.id}" class="comments btn-primary comment-btn">Comment</button>
+      <button type="button" id="${element.id}" class="reservation btn-primary res-btn">Reservation</button>
     </div>
     `;
       viewBox.append(div);

@@ -1,9 +1,18 @@
+import { storedComments } from "./api";
+
 class CommentPopup {
-    seasonList = (arr) => {
+    getComments = async (id) => {
+        const { data } = await storedComments(id);
+
+        return Array.isArray(data) ? data : [];
+    }
+
+    seasonList = async (element) => {
       const commentPopup = document.querySelector('.comment-popup');
-      arr.forEach((element) => {
-        const div = document.createElement('div');
+      const div = document.createElement('div');
         div.classList.add('popup-content', 'd-none');
+        const data = await this.getComments(element.id);
+        const comments = data.map(item => `<li>${item.date} ${item.name}: ${item.comm}</li>`).join(' ');
         div.innerHTML = `
             <div class="popup-header">
                 <img src="${element.image.original}" alt="season ${element.number}" class="popup-image">
@@ -21,7 +30,7 @@ class CommentPopup {
             <div class="comment-items">
             <h3 id="comment-count" class="center comment-count margin-b"></h3>
             <ul class="comments-list margin-b">
-                
+                ${comments}
             </ul>
 
             <h3 class="center margin-b">Add a comment</h3>
@@ -49,7 +58,6 @@ class CommentPopup {
             </div>
             `;
         commentPopup.append(div);
-      });
     }
 }
 
