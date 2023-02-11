@@ -25,32 +25,24 @@ const commentEvent = () => {
 
     const submitComment = async (e) => {
         e.preventDefault();
-        const commentLists = document.querySelector('.comments-list');
         const names = document.querySelectorAll('.comment-name');
         const comms = document.querySelectorAll('.text-input');
         const name = names[index].value;
         const comm = comms[index].value;
         const id = e.target.id.value;
+        const ind = [index];
         const { status } = await newComment({ id, name, comm });
         const data = await storedComments(id);
         const dataArr = data.data;
-        let html = '';
         dataArr.forEach(item => {
-            // addComment(item.creation_date, item.username, item.comment)
-            html += `<li class="comment-item">${item.creation_date} ${item.username}: ${item.comment}</li>`
-            // const commentItem = document.createElement('li');
-            // commentItem.className = 'comment-item';
-            // commentItem.innerHTML = `${item.creation_date} ${item.username}: ${item.comment}`;
-        })
-        console.log(html);
-        commentLists[index].innerHTML = html;
-        
+            addComment(ind, item.creation_date, item.username, item.comment)
+        }) 
         e.target.reset();
-        // const commentCount = commentCounter()
+        const commentCount = dataArr.length;
+        commentCountDisplays[index].innerHTML = `Comments (${commentCount})`;
       };
       
       forms[index].addEventListener('submit', submitComment);
-    //   commentCountDisplays[index].innerHTML = `Comments (${commentNumber})`;
   }
 };
 

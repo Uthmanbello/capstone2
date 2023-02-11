@@ -19,7 +19,7 @@ class CommentPopup {
                 <p class="second-element">Channel Network: ${element.network.name}</p>
             </div>
             <div class="comment-items">
-            <h3 id="comment-count" class="center"></h3>
+            <h3 id="comment-count" class="center comment-count"></h3>
             <ul class="comments-list">
                 
             </ul>
