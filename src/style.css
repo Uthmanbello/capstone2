@@ -13,7 +13,7 @@ body {
   font-size: 1rem;
   color: whitesmoke;
   position: relative;
-  background-color:rgb(61, 61, 61);
+  background-color: rgb(61, 61, 61);
 }
 
 *,
@@ -31,6 +31,7 @@ li {
 a {
   text-decoration: none;
   background-color: transparent;
+  color: #dd8a5a;
 }
 
 img {
@@ -92,7 +93,7 @@ img {
   border-radius: 0.5rem;
   box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.75);
   margin: 2rem;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .season-card:hover {
@@ -114,9 +115,8 @@ img {
 }
 
 .like-button:active {
-  transform: translateY(.1rem);
+  transform: translateY(0.1rem);
 }
-
 
 .season-description {
   padding: 0.5rem;
@@ -225,7 +225,7 @@ ul {
   flex-direction: column;
 }
 
-.input-style{
+.input-style {
   border-radius: 5px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
   background-color: whitesmoke;
@@ -282,8 +282,4 @@ footer {
   margin: auto 30px;
   width: 95.5vw;
   text-align: center;
-}
-
-a {
-  color: #dd8a5a;
 }
