@@ -8,7 +8,6 @@ const commentEvent = () => {
   const commentButtons = document.querySelectorAll('.comment-btn');
   const reservationItems = document.querySelectorAll('.reservation-items');
   const forms = document.querySelectorAll('.comment-form');
-  const commentCountDisplays = document.querySelectorAll('.comment-count');
 
   for (let index = 0; index < commentButtons.length; index++) {
     commentButtons[index].addEventListener('click', () => {
@@ -38,8 +37,7 @@ const commentEvent = () => {
             addComment(ind, item.creation_date, item.username, item.comment)
         }) 
         e.target.reset();
-        const commentCount = dataArr.length;
-        commentCountDisplays[index].innerHTML = `Comments (${commentCount})`;
+        commentCounter(ind, dataArr);
       };
       
       forms[index].addEventListener('submit', submitComment);

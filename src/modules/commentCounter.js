@@ -1,6 +1,6 @@
-export const commentCounter = () => {
-    const updatedCounter = document.querySelector('comments-list').getElementsByTagName('li').length;
-    return updatedCounter;
-  };
+export const commentCounter = (ind, arr) => {
+  const commentCountDisplays = document.querySelectorAll('.comment-count');
+  commentCountDisplays[ind].innerHTML = `Comments (${arr.length})`;
+};
   
-  export default commentCounter;
+export default commentCounter;

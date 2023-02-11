@@ -11,8 +11,9 @@ body {
   padding: 0;
   font-family: poppins, sans-serif;
   font-size: 1rem;
-  color: #444;
+  color: whitesmoke;
   position: relative;
+  background-color:rgb(61, 61, 61);
 }
 
 *,
@@ -40,7 +41,7 @@ img {
 
 /* Header Section */
 .header {
-  background-color: #f5efef;
+  background-color: transparent;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -50,8 +51,8 @@ img {
 }
 
 .logo {
-  width: 20rem;
-  border-radius: 0.8rem;
+  width: 10rem;
+  border-radius: 30%;
   margin-right: 1rem;
 }
 
@@ -161,7 +162,7 @@ img {
 }
 
 .popup-content {
-  background-color: white;
+  background-color: rgb(80, 80, 80);
   width: 70%;
   margin: 70px auto;
   padding: 5px 10vw 30px;
@@ -179,6 +180,10 @@ img {
   padding-top: 20px;
   margin-right: -10vw;
   cursor: pointer;
+}
+
+.margin-b {
+  margin-bottom: 30px;
 }
 
 .popup-title {
@@ -220,6 +225,13 @@ ul {
   flex-direction: column;
 }
 
+.input-style{
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  background-color: whitesmoke;
+  color: rgb(59, 59, 59);
+}
+
 .name-input {
   width: 25vw;
   height: 30px;
@@ -241,6 +253,7 @@ ul {
 }
 
 /* Reservation */
+
 .res-popup {
   position: fixed;
   top: 0;
@@ -265,11 +278,12 @@ ul {
 /* Footer Section */
 
 footer {
-  border-top: 1px solid rgb(49, 49, 49);
   padding: 10px 20px;
   margin: auto 30px;
   width: 95.5vw;
   text-align: center;
 }
 
-
+a {
+  color: #dd8a5a;
+}
