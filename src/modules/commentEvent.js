@@ -26,7 +26,6 @@ const submitComment = async (e) => {
 const commentEvent = () => {
   const popup = document.querySelector('.comment-popup');
   const commentButtons = document.querySelectorAll('.comment-btn');
-//   const reservationItems = document.querySelectorAll('.reservation-items');
 
   for (let index = 0; index < commentButtons.length; index++) {
     commentButtons[index].addEventListener('click', async () => {
@@ -36,6 +35,9 @@ const commentEvent = () => {
       popup.classList.remove('d-none');
       const popUpContents = new CommentPopup();
       await popUpContents.seasonList(element);
+
+      const reservationItem = document.querySelector('.reservation-items');
+      reservationItem.classList.add('d-none');
 
       const forms = document.querySelector('.comment-form');
 
