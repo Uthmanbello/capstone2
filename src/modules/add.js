@@ -1,3 +1,5 @@
 const addComment = (date, name, comm) => `<li>${date} ${name}: ${comm}</li>`;
 
-export default addComment;
+const addReservation = (username, stdate, edate) => `<li>${stdate} - ${edate} by ${username}</li>`;
+
+export { addComment, addReservation };
