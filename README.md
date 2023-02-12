@@ -117,19 +117,19 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author 1**
+👤 **Uthman Bello**
 
 - GitHub: [Uthmanbello](https://github.com/Uthmanbello)
 - Twitter: [@UthmanDeRoyale](https://twitter.com/UthmanDeRoyale)
 - LinkedIn: [Uthman Igein Bello-Imoukhuede](linkedin.com/in/uthman-igein-bello-imoukhuede)
 
-👤 **Author 2**
+👤 **Kola Kolade**
 
 - GitHub: [kkolade](https://github.com/kkolade)
 - Twitter: [@kola_kolade](https://twitter.com/kola_kolade)
 - LinkedIn: [Kola Kolade](https://linkedin.com/in/kolakolade/)
 
-👤 **Author 3**
+👤 **Mark Rubanza**
 
 - GitHub: [banzaman](https://github.com/banzaman)
 - Email: [Mark Rubanza](markrubanza10@gmail.com)
