@@ -1,7 +1,8 @@
-const { default: commentCounter } = require('../src/modules/counter.js');
+import { commentCounter } from '../src/modules/counter.js'
 
-describe('test for comment counts', () => {
-  test('should return the correct array length for comments array', () => {
-    expect(commentCounter([0, 'u', '8'])).toBe(3);
+describe('commentCounter', () => {
+  test('returns the number of comments', () => {
+    const comments = ['Comment 1', 'Comment 2', 'Comment 3'];
+    expect(commentCounter(comments)).toBe(3);
   });
 });

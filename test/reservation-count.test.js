@@ -1,7 +1,8 @@
-const { default: reservationCounter } = require('../src/modules/counter.js');
+import { reservationCounter } from '../src/modules/counter.js'
 
-describe('test for reservation counts', () => {
-  test('should return the correct array length for reseravtions array', () => {
-    expect(reservationCounter(['me', '34', 23, 0, 'you'])).toBe(5);
+describe('reservationCounter', () => {
+  test('returns the number of reservations', () => {
+    const reservations = ['Reservation 1', 'Reservation 2', 'Reservation 3'];
+    expect(reservationCounter(reservations)).toBe(3);
   });
 });
