@@ -49,6 +49,12 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 💻 Project Presentation <a name="getting-started"></a>
+
+Click on the link below for the project presentation:
+
+- [Presentation Link](https://drive.google.com/file/d/1EzH2a3eMOoDAoMNG2LJM0yU8dbKfCCcN/view?usp=sharing)
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://uthmanbello.github.io/capstone2/dist)
