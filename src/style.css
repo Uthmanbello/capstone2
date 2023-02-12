@@ -63,6 +63,11 @@ img {
   padding: 1rem 2rem;
 }
 
+.seasons-count {
+  display: inline-block;
+  font-size: 2rem;
+}
+
 .main-text,
 .sub-text {
   display: block;
