@@ -6,6 +6,8 @@ import './images/season-2-img.jpeg';
 import './images/the100logo.png';
 import commentEvent from './modules/commentEvent.js';
 import Hundred from './modules/hundred.js';
+import { likeEvent, renderLike } from './modules/likes.js';
+import pageCount from './modules/pageCount.js';
 import reservationEvent from './modules/reservationEvent.js';
 import View from './modules/views.js';
 import './style.css';
@@ -22,7 +24,10 @@ window.onload = async () => {
   if (localStorage.getItem('data')) {
     const arr = JSON.parse(localStorage.getItem('data'));
     view.seasonList(arr);
+    pageCount();
     commentEvent();
     reservationEvent();
+    renderLike();
+    likeEvent();
   }
 };

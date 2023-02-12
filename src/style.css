@@ -63,6 +63,11 @@ img {
   padding: 1rem 2rem;
 }
 
+.seasons-count {
+  display: inline-block;
+  font-size: 2rem;
+}
+
 .main-text,
 .sub-text {
   display: block;
@@ -106,8 +111,14 @@ img {
   border-top-left-radius: 0.5rem;
 }
 
+.fa-heart {
+  color: whitesmoke;
+}
+
 .like-button {
   cursor: pointer;
+  border: none;
+  background: none;
 }
 
 .like-button:hover {
