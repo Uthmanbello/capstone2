@@ -106,8 +106,14 @@ img {
   border-top-left-radius: 0.5rem;
 }
 
+.fa-heart {
+  color: whitesmoke;
+}
+
 .like-button {
   cursor: pointer;
+  border: none;
+  background: none;
 }
 
 .like-button:hover {

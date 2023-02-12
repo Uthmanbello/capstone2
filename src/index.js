@@ -8,6 +8,7 @@ import commentEvent from './modules/commentEvent.js';
 import Hundred from './modules/hundred.js';
 import reservationEvent from './modules/reservationEvent.js';
 import View from './modules/views.js';
+import { renderLike, likeEvent} from './modules/likes.js'
 import './style.css';
 
 // Initialize
@@ -24,5 +25,7 @@ window.onload = async () => {
     view.seasonList(arr);
     commentEvent();
     reservationEvent();
+    renderLike()
+    likeEvent()   
   }
 };
