@@ -1,4 +1,4 @@
-import { reservationCounter } from '../src/modules/counter.js'
+import { reservationCounter } from '../src/modules/counter.js';
 
 describe('reservationCounter', () => {
   test('returns the number of reservations', () => {
