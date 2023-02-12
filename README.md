@@ -51,7 +51,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://uthmanbello.github.io/)
+- [Live Demo Link](https://uthmanbello.github.io/capstone2/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +105,7 @@ npx eslint . --fix
 
 You can deploy this project using:
 
--[Deployment Link](https://uthmanbello.github.io/)
+-[Deployment Link](https://uthmanbello.github.io/capstone2/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
