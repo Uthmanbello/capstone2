@@ -113,21 +113,21 @@ You can deploy this project using:
 
 👤 **Author 1**
 
-- GitHub: [@githubhandle](https://github.com/Uthmanbello)
-- Twitter: [@twitterhandle](https://twitter.com/UthmanDeRoyale)
-- LinkedIn: [LinkedIn](linkedin.com/in/uthman-igein-bello-imoukhuede)
+- GitHub: [Uthmanbello](https://github.com/Uthmanbello)
+- Twitter: [@UthmanDeRoyale](https://twitter.com/UthmanDeRoyale)
+- LinkedIn: [Uthman Igein Bello-Imoukhuede](linkedin.com/in/uthman-igein-bello-imoukhuede)
 
 👤 **Author 2**
 
-- GitHub: [@githubhandle](https://github.com/kkolade)
-- Twitter: [@twitterhandle](https://twitter.com/kola_kolade)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/kolakolade/)
+- GitHub: [kkolade](https://github.com/kkolade)
+- Twitter: [@kola_kolade](https://twitter.com/kola_kolade)
+- LinkedIn: [Kola Kolade](https://linkedin.com/in/kolakolade/)
 
 👤 **Author 3**
 
-- GitHub: [@githubhandle](https://github.com/banzaman)
-- Email: [email](markrubanza10@gmail.com)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mark-rubanza-anderson-4399a2211/)
+- GitHub: [banzaman](https://github.com/banzaman)
+- Email: [Mark Rubanza](markrubanza10@gmail.com)
+- LinkedIn: [Mark Rubanza Anderson](https://www.linkedin.com/in/mark-rubanza-anderson-4399a2211/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
