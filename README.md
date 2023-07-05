@@ -32,7 +32,7 @@
 
 # 📖 [Capstone 2] <a name="about-project"></a>
 
-**[Capstone 2]** is a project that uses a Single Page Application format and two APIs to display items on a page. A user can open comments and reservations popup windows. He can also add comments and reservations to the individual popup windows. There are also like buttons which can be used to increment the number of likes for a selected movie season.
+**[Capstone 2]** is a single-page application that interacts with two APIs. It is an app wherein users can 'like' respective seasons of 'The 100' series, add comments, and make reservations too. Built with JavaScript
 
 ## 🛠 Built With <a name="built-with"></a>
 -HTML
